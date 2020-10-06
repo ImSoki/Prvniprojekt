@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Moje stránka</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    
+    Moje stránečka...<br>
+    Zadej jméno: <input type="text" id="jmeno">
+    <input type="button" value="Stiskni mě!" onclick="pozdravZMojiStranky()">
+
+    <h1>Kalkulačka</h1>
+
+    <input type="number" id="cislo1">
+    <select id="operace">
+      <option value="plus">+</option>
+      <option value="minus">-</option>
+    </select>
+    <input type="number" id="cislo2">
+    <input type="button" value="=" onclick="vypocet()">
+    <input type="text" id="vysledek" readonly="readonly">
+
+    <div id="vysledek2">???</div>
+
+  </body>
+</html>
