@@ -14,14 +14,25 @@ function vypocet() {
   let vysl = "?";
   if (isNaN(c1)) {
     alert("Neni zadano prvni cislo!");
-  } else if (isNaN(c2)) {
+  } 
+  else if (isNaN(c2)) {
     alert("Neni zadano druhe cislo!");
-  } else if (op == "plus") {
+  } 
+  else if (op == "plus") {
     vysl = c1 + c2;
-  } else if (op == "minus") {
+  } 
+  else if (op == "minus") {
     vysl = c1 - c2;
+  } 
+  else if (op == "krat") {
+    vysl = c1 * c2;
   }
-
+  else if (c2 === 0) {
+    alert("Nelze delit nulou!")
+  }
+  else if (op == "deleno") {
+    vysl = c1 / c2;
+  }
   console.log(vysl);
   document.getElementById("vysledek").value = vysl;
   document.getElementById("vysledek2").innerHTML = "Výsledek je <b>" + vysl + "</b>";
