@@ -33,6 +33,12 @@ function vypocet() {
   else if (op == "deleno") {
     vysl = c1 / c2;
   }
+
+  if (!isNaN(vysl) && document.getElementById("zaokrouhlit").checked) {
+    let pm = document.getElementById("pocetmist").value;
+    vysl = vysl.toFixed(pm);
+  }
+
   console.log(vysl);
   document.getElementById("vysledek").value = vysl;
   document.getElementById("vysledek2").innerHTML = "Výsledek je <b>" + vysl + "</b>";
